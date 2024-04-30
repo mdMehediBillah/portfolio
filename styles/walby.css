@@ -1,0 +1,98 @@
+
+@import url(./partials/_variables.css);
+@import url(./style.css);
+
+
+
+
+
+
+
+
+
+/** Start about walby Section**/
+
+.walby-logo{
+  width: 140px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.walby-uxFramework{
+  width: 360px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.walby-about-screen {
+  width: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.framework-option-text{
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 6px;
+  padding: 6px;
+  background-color: white;
+
+}
+
+.link-button{
+  color: rgb(245, 245, 245);
+  margin: 4px;
+}
+
+.link-button:hover{
+  color: rgb(4, 255, 234);
+}
+
+/** End about walby Section**/
+
+
+/** Start design system Section**/
+.walby-designSystem-image{
+  width: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.designSystem-color-image{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  object-fit: cover;
+  
+}
+
+.designSystem-spacing-image{
+  width: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+/** End design systwm Section**/
+
+
+/** Start epic  **/
+
+.competitor-image{
+  width: 400;
+  object-fit: cover;
+  margin: 1.5rem;
+  }
+
+  .handover-image{
+    display: flex;
+    width: 50;
+    object-fit: cover;
+    margin: 1.5rem;
+    margin: 1rem;
+  }
+
+
+
