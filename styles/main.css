@@ -1,4 +1,5 @@
 @import url(home.css);
+@import url(hero.css);
 
 :root {
   --bgColorLight: #ecfbff;
