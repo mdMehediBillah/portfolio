@@ -1,10 +1,22 @@
 @import url(home.css);
 
-
+:root {
+  --bgColorLight: #ecfbff;
+  --bgColorDark: #22577a;
+  --brandColor: #5a189a;
+  --brandColorSecond: #f72585;
+  --brandColorExtra: #ffc6fd;
+  --textDark: #212529;
+  --textLight: #f8f9fa;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: aquamarine;
 }
