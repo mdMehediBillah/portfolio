@@ -5,6 +5,8 @@
   padding-bottom: 0.6rem;
   position: fixed;
   width: 100%;
+  box-shadow: 2px 1px 12px rgba(160, 0, 224, 0.3);
+  z-index: 100;
 }
 
 .header-container {
@@ -41,6 +43,7 @@
 .header-right-nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 1.4rem;
   list-style: none;
   font-size: 0.9rem;
@@ -207,7 +210,9 @@
   #header {
     padding-bottom: 0.4rem;
   }
-
+  #main {
+    padding-top: 120px;
+  }
   .header-container {
     grid-template-columns: 1fr;
     width: 90%;
