@@ -1,0 +1,98 @@
+/* Header css start */
+#header {
+  background-color: var(--bgColorLight);
+  padding-top: 1.4rem;
+  padding-bottom: 0.6rem;
+  position: fixed;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo-container {
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    color: var(--brandColor);
+    font-family: "Jersey 20", sans-serif;
+    font-size: 2rem;
+    text-transform: lowercase;
+    transition: 0.3s ease-in;
+
+    &:hover {
+      color: var(--brandColorSecond);
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+.header-right-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.4rem;
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--textDark);
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--brandColor);
+    transition: 0.3s ease-in;
+
+    &:hover {
+      color: var(--brandColorSecond);
+      text-decoration: underline;
+      text-underline-offset: 0.5em;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #header {
+    padding-bottom: 0.4rem;
+  }
+
+  .header-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.6rem;
+  }
+
+  .header-logo-container {
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .header-right-nav {
+    justify-content: center;
+    gap: 1.4rem;
+    background-color: var(--brandColor);
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+
+    a {
+      color: var(--textLight);
+
+      &:hover {
+        color: var(--brandColorExtra);
+      }
+    }
+  }
+}
