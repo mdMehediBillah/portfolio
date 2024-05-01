@@ -6,8 +6,10 @@
   --brandColor: #5a189a;
   --brandColorSecond: #f72585;
   --brandColorExtra: #ffc6fd;
-  --textDark: #212529;
+  --textDark: #111111;
   --textLight: #f8f9fa;
+  --bgColorDark-deep: #112b3c;
+  --grayDark: #0a171f;
 }
 
 * {
@@ -18,5 +20,5 @@
 }
 
 body {
-  background-color: aquamarine;
+  background-color: var(--bgColorDark);
 }
