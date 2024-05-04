@@ -1,6 +1,11 @@
+/* padding added in main container for stick header */
+#main {
+  padding-top: 85px;
+}
+
 /* Header css start */
 #header {
-  background-color: var(--bgColorLight);
+  background-color: var(--textLight);
   padding-top: 1.4rem;
   padding-bottom: 0.6rem;
   position: fixed;
@@ -63,11 +68,6 @@
       text-decoration-thickness: 2px;
     }
   }
-}
-
-/* padding added in main container for stick header */
-#main {
-  padding-top: 70px;
 }
 
 /* Footer css start */
@@ -185,10 +185,14 @@
 }
 
 .footer-terms-container {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+  flex-flow: row wrap;
+  gap: 1rem;
   padding: 2rem;
   width: 80%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -204,6 +208,11 @@
     justify-content: start;
     gap: 3rem;
   }
+
+  .footer-terms-container {
+    justify-content: center;
+    gap: 3rem;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -211,7 +220,7 @@
     padding-bottom: 0.4rem;
   }
   #main {
-    padding-top: 120px;
+    padding-top: 140px;
   }
   .header-container {
     grid-template-columns: 1fr;
@@ -249,5 +258,9 @@
   .footer-projects-container {
     justify-content: start;
     gap: 3rem;
+  }
+
+  .footer-terms-container {
+    justify-content: center;
   }
 }

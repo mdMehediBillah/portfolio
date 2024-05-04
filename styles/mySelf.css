@@ -1,0 +1,306 @@
+.mySelf-container {
+  background: url(../image/extra-photos/Background\ 1.jpg);
+  background-color: var(--bgColorLight);
+
+  margin: 0.2rem auto;
+  width: 95%;
+  max-width: 1400px;
+  border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  padding: 2rem;
+}
+
+.mySelf-all-information-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  gap: 3rem;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.mySelf-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--textDark);
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+
+.mySelf-information-experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--bgExperiColor);
+  padding: 2rem;
+  border-radius: 0.4rem;
+
+  h2 {
+    font-size: 5rem;
+    color: var(--brandColor);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 2.2rem;
+    padding-left: 1rem;
+    border-left: 2px solid;
+  }
+}
+
+/* DIGITAL PROFICIENCY */
+.mySelf-digital-pro-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  gap: 3rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.mySelf-professional {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--textDark);
+  }
+
+  li {
+    list-style: disc;
+    margin-left: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+}
+
+.mySelf-digital-tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  gap: 0.2rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  border: 2px dotted var(--brandColor);
+  border-radius: 3rem 0.4rem 3rem 0.3rem;
+}
+
+.digital-tool {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+
+  img {
+    width: 60px;
+    margin: auto;
+  }
+
+  &:hover {
+    scale: 1.08;
+    background-color: rgba(250, 235, 215, 0.5);
+    box-shadow: 1px 1px 20px rgba(110, 0, 132, 0.2);
+  }
+}
+
+/* Service Offer area */
+
+.mySelf-offer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  gap: 2rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: var(--bgExperiColor);
+  margin-top: 4rem;
+  border-radius: 0.4rem;
+
+  h2 {
+    width: 70%;
+    color: var(--brandColor);
+    margin: auto;
+    padding: 1rem 0;
+    border-bottom: 2px dotted var(--brandColor);
+  }
+}
+.mySelf-all-services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1.4rem;
+  background-color: var(--bgColorLight);
+  border-radius: 0.4rem;
+  padding: 1.6rem 0.4rem;
+  margin-top: 2rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  img {
+    width: 70%;
+    max-width: 120px;
+    min-width: 90px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    color: var(--textDark);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &:hover {
+    scale: 1.05;
+    box-shadow: 1px 1px 12px rgba(87, 0, 87, 0.4);
+  }
+}
+
+/* Responsibe area */
+@media only screen and (max-width: 1024px) {
+  .mySelf-all-information-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 8rem 0;
+  }
+
+  .mySelf-information {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .mySelf-information-experience {
+    h2 {
+      font-size: 3rem;
+      color: var(--brandColor);
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  .mySelf-all-services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mySelf-digital-pro-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  .mySelf-professional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    li {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  .digital-tool {
+    img {
+      width: 50px;
+    }
+  }
+
+  .mySelf-digital-tools-container {
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mySelf-all-information-container {
+    grid-template-columns: 1fr;
+  }
+
+  .mySelf-all-services-container {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .mySelf-offer-container {
+    background-color: transparent;
+    padding-top: 2px;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      border: 2px dotted var(--brandColor);
+      border-radius: 2rem;
+    }
+  }
+
+  .service {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: rgb(255, 255, 251);
+  }
+
+  .mySelf-professional {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}

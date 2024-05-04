@@ -1,9 +1,10 @@
 .hero-container-bg {
   margin: 0 auto;
-  width: 80%;
-  max-width: 1200px;
-  background-color: var(--textLight);
-  border-radius: 3rem 0.4rem 3rem 0.4rem;
+  width: 95%;
+  max-width: 1400px;
+  background: url(../image/extra-photos/Background\ 1.jpg);
+  background-color: var(--bgColorLight);
+  border-radius: 3rem 3rem 0.4rem 0.4rem;
 }
 
 .hero-container {
@@ -11,7 +12,6 @@
   grid-template-columns: 2fr 2fr;
   align-items: center;
   justify-content: center;
-  width: 90%;
   max-width: 1000px;
   justify-content: center;
   margin: 0 auto;
@@ -37,6 +37,7 @@
     color: var(--brandColor);
     font-family: "Bubblegum Sans", sans-serif;
     letter-spacing: 3px;
+    line-height: 3rem;
   }
 
   h4 {
@@ -52,30 +53,30 @@
   .button-cv {
     margin-top: 2.4rem;
   }
-  .button-downlode-cv {
+}
+.button-downlode-cv {
+  background-image: linear-gradient(
+    120deg,
+    var(--brandColor),
+    var(--brandColorSecond)
+  );
+  color: var(--textLight);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 12px rgba(81, 0, 106, 0.389);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
     background-image: linear-gradient(
       120deg,
-      var(--brandColor),
-      var(--brandColorSecond)
+      var(--brandColorSecond),
+      var(--brandColor)
     );
-    color: var(--textLight);
-    border: none;
-    padding: 0.6rem 1.4rem;
-    font-weight: 600;
-    border-radius: 0.4rem;
-    box-shadow: 2px 2px 12px rgba(81, 0, 106, 0.389);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    text-decoration: none;
-
-    &:hover {
-      background-image: linear-gradient(
-        120deg,
-        var(--brandColorSecond),
-        var(--brandColor)
-      );
-      box-shadow: 4px 4px 12px rgba(81, 0, 106, 0.5);
-    }
+    box-shadow: 4px 4px 12px rgba(81, 0, 106, 0.5);
   }
 }
 
@@ -83,17 +84,13 @@
 
 @media only screen and (max-width: 1024px) {
   .hero-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding: 1rem;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .hero-container-bg {
-    width: 90%;
-    border-radius: 3rem 0.4rem 3rem 0.4rem;
-  }
   .hero-container {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -107,7 +104,8 @@
     padding: 1rem;
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.4rem;
+      line-height: 2.2rem;
     }
 
     h4 {
