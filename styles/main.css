@@ -1,5 +1,6 @@
 @import url(home.css);
 @import url(hero.css);
+@import url(mySelf.css);
 
 :root {
   --bgColorLight: #ecfbff;
@@ -11,6 +12,7 @@
   --textLight: #f8f9fa;
   --bgColorDark-deep: #112b3c;
   --grayDark: #0a171f;
+  --bgExperiColor: rgba(204, 216, 229, 0.6);
 }
 
 * {
