@@ -210,8 +210,9 @@
   }
 
   .footer-terms-container {
-    justify-content: center;
+    justify-content: space-between;
     gap: 3rem;
+    padding: 2rem 0;
   }
 }
 
