@@ -166,7 +166,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   margin: auto;
 }
@@ -233,6 +233,15 @@
 
   .mySelf-all-services-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mySelf-offer-container {
+    background-color: transparent;
+    padding-top: 2px;
+    h2 {
+      font-weight: 700;
+      border: none;
+    }
   }
 
   .mySelf-digital-pro-container {
