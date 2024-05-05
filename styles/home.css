@@ -218,7 +218,9 @@
 
 @media only screen and (max-width: 640px) {
   #header {
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.2rem;
+    background: linear-gradient(120deg, rgb(145, 2, 174), rgb(1, 41, 78));
+    border-radius: 0 0 2rem 2rem;
   }
   #main {
     padding-top: 140px;
@@ -233,21 +235,26 @@
   .header-logo-container {
     h4 {
       text-align: center;
+      color: var(--textLight);
     }
   }
 
   .header-right-nav {
     justify-content: center;
-    gap: 1.4rem;
-    background-color: var(--brandColor);
+    gap: 0.6rem;
+    /* background-color: var(--brandColorExtra); */
     padding: 0.6rem;
-    border-radius: 0.8rem;
 
     a {
       color: var(--textLight);
+      background-color: var(--brandColorSecond);
+      padding: 0.6rem 1.8rem;
+      border-radius: 0.4rem 2rem 0.4rem 2rem;
 
       &:hover {
         color: var(--brandColorExtra);
+        text-decoration: none;
+        background-color: var(--brandColor);
       }
     }
   }
