@@ -1,17 +1,20 @@
 /* padding added in main container for stick header */
 #main {
-  padding-top: 85px;
+  padding-top: 100px;
 }
 
 /* Header css start */
 #header {
-  background-color: var(--textLight);
+  /* background-color: var(--textLight); */
   padding-top: 1.4rem;
   padding-bottom: 0.6rem;
   position: fixed;
   width: 100%;
   box-shadow: 2px 1px 12px rgba(160, 0, 224, 0.3);
   z-index: 100;
+
+  background: linear-gradient(120deg, rgb(145, 2, 174), rgb(1, 41, 78));
+  border-radius: 0 0 1rem 1rem;
 }
 
 .header-container {
@@ -31,7 +34,7 @@
   }
 
   h4 {
-    color: var(--brandColor);
+    color: var(--textLight);
     font-family: "Jersey 20", sans-serif;
     font-size: 2rem;
     text-transform: lowercase;
@@ -53,19 +56,22 @@
   list-style: none;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--textDark);
 
   a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--brandColor);
     transition: 0.3s ease-in;
+    color: var(--textLight);
+    background-color: var(--brandColorSecond);
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.4rem 2rem 0.4rem 2rem;
 
     &:hover {
-      color: var(--brandColorSecond);
-      text-decoration: underline;
+      color: var(--brandColor);
+      /* text-decoration: underline;
       text-underline-offset: 0.5em;
-      text-decoration-thickness: 2px;
+      text-decoration-thickness: 2px; */
     }
   }
 }
